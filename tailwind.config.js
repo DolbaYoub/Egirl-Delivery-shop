@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bungee': ['Bungee Spice', 'cursive'] // Assurez-vous d'utiliser le bon nom de famille de la police
+      }
+    },
   },
   plugins: [],
 }

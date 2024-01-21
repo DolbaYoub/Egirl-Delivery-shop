@@ -6,7 +6,7 @@
 }
 */
 body {
-  background-color: #ac8a94; /* Remplacez cette couleur par la teinte de rose que vous préférez */
+  background-color: #f5f1f1; /* Remplacez cette couleur par la teinte de rose que vous préférez */
 }
 
 /* Ajoutez ceci à votre fichier app.css */
@@ -215,6 +215,8 @@ body {
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  min-height: 500px; /* Ajustez cette valeur selon vos besoins */
+
   /* Ajoutez le clip-path ici pour épouser les contours de la bannière */
 
   /* Style féerique */
@@ -229,7 +231,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(235, 223, 223, 0.39), rgba(78, 30, 30, 0.199));
+  background: linear-gradient( rgba(235, 223, 223, 0.39), rgba(78, 30, 30, 0.199));
 }
 
 /* Ajoutez des styles spécifiques à votre texte ici */
@@ -245,30 +247,17 @@ body {
 
 
 .left-section {
+  width: 100%;
+
   flex: 1;
 }
 
-.right-section {
-  flex: 2;
-  padding-left: 20px;
-}
+ 
 
 /* Ajoutez d'autres styles au besoin */
 
 /* Ajoutez ces styles à votre fichier CSS ou votre fichier de configuration Tailwind */
 
-@keyframes floatAnimation {
-  0%, 100% {
-    transform: translateY(0); /* La tasse est en position initiale et finale */
-  }
-  50% {
-    transform: translateY(-10px); /* La tasse monte pendant la moitié de l'animation */
-  }
-}
-
-.floating-cup {
-  animation: floatAnimation 3s infinite ease-in-out; /* Ajustez la durée selon vos préférences */
-}
 
 /* PopupModal.css */
 /* PopupModal.css */
@@ -310,12 +299,13 @@ body {
   background-color: #e74c3c;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  
 }
 
 .btn-primary:hover {
@@ -328,3 +318,7 @@ body {
 }
 
 
+/* App.css */
+.egirldelivery-font {
+  font-family: 'Bungee Spice', cursive; /* Remplacez 'Bungee Spice' par le nom exact de la police si nécessaire */
+}

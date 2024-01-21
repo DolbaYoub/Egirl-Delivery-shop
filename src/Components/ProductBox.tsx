@@ -1,4 +1,3 @@
-// src/Components/ProductBox.tsx
 import React from 'react';
 
 interface ProductBoxProps {
@@ -13,21 +12,21 @@ interface ProductBoxProps {
 
 const ProductBox: React.FC<ProductBoxProps> = ({ product }) => {
   return (
-    <div className="border p-2 flex flex-col items-center rounded-md shadow-md transition-transform transform hover:scale-105 bg-white bg-opacity-80">
+    <div className="border p-4 flex flex-col items-center rounded-lg shadow-lg transition-transform transform hover:scale-110 bg-white hover:shadow-xl">
       <img
         src={product.image}
         alt={product.title}
-        className="max-w-full h-auto rounded-md mb-1"
-        style={{ maxHeight: '150px' }}
+        className="max-w-full h-auto rounded-t-lg"
+        style={{ maxHeight: '200px' }}
       />
-      <h3 className="text-base font-semibold mb-1">{product.title}</h3>
-      <p className="text-gray-600 mb-1">{product.description}</p>
-      <div className="flex items-center justify-between w-full">
-        <p className="text-sm font-bold text-gray-800">${product.price.toFixed(2)}</p>
-        <button className="bg-pink-500 text-white px-2 py-1 rounded-full hover:bg-pink-600 focus:outline-none focus:ring focus:border-pink-300 text-xs">
-          Ajouter
-        </button>
+      <div className="pt-2 pb-4 px-4 flex flex-col items-center">
+        <h3 className="text-lg font-bold mb-2">{product.title}</h3>
+        <p className="text-sm text-gray-700 mb-3">{product.description}</p>
+        <span className="text-md font-semibold text-gray-800">${product.price.toFixed(2)}</span>
       </div>
+      <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 text-sm w-full transition-colors">
+        Ajouter au panier
+      </button>
     </div>
   );
 };
